@@ -1,5 +1,21 @@
 body {
     margin: 0;
-    background: rgb(66, 145, 255);
-    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* optional background color */
+}
+
+#main-logo {
+    width: 10px;
+    height: auto;
+}
+
+#heading {
+    display: inline;
+}
+.navigation-bar {
+    display: inline-block;
 }
