@@ -7,6 +7,18 @@ body {
     margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+    section {
+        text-align: center; /* Căn giữa nội dung trong section */
+    }
+
+    section article {
+        text-align: center; /* Đặt lại căn giữa cho các phần tử con của section */
+    }
+
+    /* Add more responsive styles as needed */
+}
+
 header {
     background-color: #3399ff;
     color: #fff;
