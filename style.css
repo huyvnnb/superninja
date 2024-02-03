@@ -1,21 +1,154 @@
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: #3399ff;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0; /* optional background color */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#main-logo {
-    width: 10px;
-    height: auto;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-#heading {
-    display: inline;
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px; /* Khoảng cách giữa logo và văn bản */
 }
-.navigation-bar {
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #3399ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+article {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #333;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
     display: inline-block;
+    background-color: #3399ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+/* Thêm các quy tắc CSS mới hoặc sửa đổi các quy tắc hiện có */
+#about {
+    max-width: 1200px;
+    margin: 20px auto 30px; /* Thay đổi giá trị margin-bottom để tạo khoảng cách với footer */
+    padding: 20px; /* Tăng độ rộng của phần "About Us" */
+    background-color: #f8f8f8; /* Màu nền nhẹ nhàng */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+#about-content {
+    flex-grow: 1;
+    margin-left: 40px; /* Tăng khoảng cách giữa hình tròn và nội dung */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 2em; /* Tăng kích thước chữ cho tiêu đề */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+#about p {
+    color: #666;
+    font-size: 1.2em; /* Tăng kích thước chữ cho đoạn văn */
+    line-height: 1.6; /* Tăng dải giữa dòng để đọc dễ dàng hơn */
+    margin: 0;
+}
+
+#about a {
+    color: #3399ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about a:hover {
+    text-decoration: underline; /* Hiệu ứng khi di chuột qua liên kết */
 }
